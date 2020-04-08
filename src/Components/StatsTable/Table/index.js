@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import { Table, TableBody, TableData, TableRow } from './styles';
-import teamColors from '../../../assets/teamColors';
+import TableHeader from '../TableHeader';
 
-const StatsTable = ({ stats }) => (
+const StatsTable = ({ stats, headers }) => (
   <Table>
+    <TableHeader headers={headers} />
     <TableBody>
       {stats.map((statsObj) => {
         return (
           <TableRow>
             {Object.keys(statsObj).map((keyName) => {
-              console.log(keyName);
               return <TableData>{statsObj[keyName]}</TableData>;
             })}
           </TableRow>

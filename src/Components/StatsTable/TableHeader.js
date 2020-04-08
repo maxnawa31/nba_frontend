@@ -1,13 +1,13 @@
 import React from 'react';
 import { TableRow, TableHeader, Thead } from './Table/styles';
 
-const Header = (headers) => (
+const Header = ({ headers }) => (
   <Thead>
-    {headers.map((headerText) => (
-      <TableRow>
+    <TableRow>
+      {headers.map((headerText) => (
         <TableHeader>{headerText}</TableHeader>
-      </TableRow>
-    ))}
+      ))}
+    </TableRow>
   </Thead>
 );
 
