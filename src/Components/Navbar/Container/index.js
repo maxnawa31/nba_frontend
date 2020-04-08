@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "./styles";
-import Top from "./Top/";
+import Top from "./Top";
 
 const NavbarContainer = () => (
 	<Container>

@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
-import NavbarContainer from "./Components/Navbar/Container/";
-import Table from "./Components/StatsTable/Table";
+import NavbarContainer from "./components/Navbar/Container";
+import Table from "./components/StatsTable/Table";
 
 function App() {
   return (
