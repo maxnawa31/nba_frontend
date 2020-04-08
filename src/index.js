@@ -5,13 +5,14 @@ import { Provider } from 'react-redux';
 import './index.css';
 import store, { persistor } from './store';
 import App from './App';
+import Routes from './routes';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <PersistGate persistor={persistor}>
-        <App />
+        <Routes />
       </PersistGate>
     </Provider>
   </React.StrictMode>,
