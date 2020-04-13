@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { syncTeamStats } from '../../../actions/teamStats';
 import { TeamStatsTable } from './styles';
-import { teamStatsTableHeaderData } from '../../../assets/TableHeaderData/teamStats';
+import { formattedTeamStatsHeaders } from '../../../assets/TableHeaderData/teamStats';
 import {
   formattedTeamStats,
   teamStatsYearSelector,
@@ -16,7 +16,7 @@ class LandingTable extends React.Component {
   }
   render() {
     const { stats } = this.props;
-    return <TeamStatsTable headers={teamStatsTableHeaderData} stats={stats} />;
+    return <TeamStatsTable category="team_stats" headers={formattedTeamStatsHeaders} stats={stats} />;
   }
 }
 

@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Navbar from './components/Navbar/Container';
 import Landing from './components/Landing/TeamStatsTable';
+import IndividualTeam from './components/IndividualTeam';
 
 const Routes = () => (
   <BrowserRouter>
-    <Navbar />
     <Switch>
+      <Route path="/teams/:id/:year" component={IndividualTeam}></Route>
       <Route path="/" component={Landing}></Route>
     </Switch>
   </BrowserRouter>

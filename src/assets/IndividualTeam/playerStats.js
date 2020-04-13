@@ -1,6 +1,8 @@
-export const teamStatsTableHeaderData = [
-  'team_name',
+export const individualTeamStatsHeaders = [
+  'first_name',
+  'last_name',
   'games_played',
+  'games_started',
   'minutes_played',
   'field_goals',
   'field_goals_attempts',
@@ -11,6 +13,7 @@ export const teamStatsTableHeaderData = [
   'two_pointers',
   'two_point_attempts',
   'two_point_pct',
+  'effective_fg_pct',
   'free_throws',
   'free_throw_attempts',
   'free_throw_pct',
@@ -25,19 +28,22 @@ export const teamStatsTableHeaderData = [
   'points',
 ];
 
-export const formattedTeamStatsHeaders = [
-  'TEAM',
+export const formattedPlayerStatsHeaders = [
+  'FIRST_NAME',
+  'LAST_NAME',
   'GP',
+  'GS',
   'MP',
   'FG',
   'FGA',
   'FG%',
   '3P',
   '3PA',
-  '3PT%',
+  '3P%',
   '2P',
   '2PA',
-  '2PT%',
+  '2P%',
+  'EFG%',
   'FT',
   'FTA',
   'FT%',
@@ -50,4 +56,4 @@ export const formattedTeamStatsHeaders = [
   'TNO',
   'PF',
   'PTS',
-];
+]

@@ -1,15 +1,20 @@
 import { combineReducers } from 'redux';
 import teamStatsReducer, { teamStatsInitialState } from './team_stats';
+import indivdualTeamReducer, {
+  individualTeamDefaultState,
+} from './individual_team';
 
 export const initialState = {
-  teamStats: teamStatsInitialState
-}
+  teamStats: teamStatsInitialState,
+  individualTeam: individualTeamDefaultState,
+};
 
 const reducers = combineReducers({
-  teamStats: teamStatsReducer
-})
+  teamStats: teamStatsReducer,
+  individualTeam: indivdualTeamReducer,
+});
 
 const rootReducer = (state = initialState, action) => {
-  return reducers(state, action)
-}
-export default rootReducer
+  return reducers(state, action);
+};
+export default rootReducer;
